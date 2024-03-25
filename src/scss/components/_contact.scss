@@ -21,6 +21,11 @@
     }
     p {
       margin-bottom: 25px;
+      color: $text-color-dark
+    }
+    a {
+      color: $text-color-dark;
+      text-decoration: underline;
     }
     ul {
       padding: 0;
