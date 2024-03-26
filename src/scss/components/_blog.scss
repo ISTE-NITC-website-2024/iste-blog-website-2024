@@ -430,11 +430,13 @@
         }
       }
       img {
+        border-radius: 10px;
         box-shadow: 10px 25px 40px 0px rgba(18, 21, 26, 0.07);
         margin: 0 -60px 50px;
         @include desktop-lg {
           margin: 0 0 40px 0;
-          width: 100%;
+          width: 400px;
+          height: 400px;
         }
         @include mobile {
           margin-bottom: 30px;
@@ -455,47 +457,7 @@
           font-size: 20px;
         }
       }
-      blockquote {
-        background-color: #f6f6f6;
-        padding: 45px 100px 40px 50px;
-        margin-bottom: 70px;
-        position: relative;
-        @include desktop {
-          padding: 45px;
-          margin-bottom: 50px;
-        }
-        @include tablet {
-          margin-bottom: 30px;
-        }
-        @include mobile {
-          padding: 20px 10px 20px 20px;
-          margin-bottom: 15px;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          width: 50px;
-          height: 3px;
-          background-color: $black;
-          top: 50%;
-          left: -3%;
-          transform: translate(0%, -50%) rotate(90deg);
-          @include mobile {
-            display: none;
-          }
-        }
-        p {
-          color: $text-color-dark;
-          font-size: 20px;
-          font-weight: 500;
-          margin-bottom: 0;
-          padding: 0;
-          letter-spacing: 1px;
-          @include mobile {
-            font-size: 16px;
-          }
-        }
-      }
+
       &-banner {
         display: flex;
         justify-content: center;
@@ -508,22 +470,8 @@
         @include mobile {
           margin-bottom: 15px;
         }
-        .banner {
-          &:nth-child(1) {
-            padding-right: 50px;
-            @include tablet {
-              padding-bottom: 20px;
-              padding-right: 0;
-            }
-          }
-          img {
-            max-width: 100%;
-            margin: 0;
-            box-shadow: none;
-          }
-        }
-      }
     }
+  }
     &-presentation {
       margin-bottom: 50px;
       display: flex;
